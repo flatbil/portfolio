@@ -1,0 +1,62 @@
+h1 {
+    background-color: #4B2E83;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4B2E83;
+}
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav {
+    transition: all 0.3s ease-in-out;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #B7A57A;
+}
+nav ul :hover {
+    background-color: #85754D;
+}
+nav ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    padding: 20px;
+}
+nav ul li a {
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.projects {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.projects :hover{
+    background-color: #85754D;
+}
+.projects li{
+    background-color: #B7A57A;
+    text-align: center;
+}
+.projects li img {
+    width: 300px;
+    border-radius: 10%;
+    border-width: 10px;
+    padding: 10px;
+}
+button {
+    background-color: white;
+    font-size: large;
+}
+footer nav {
+    list-style-type: none;
+}
