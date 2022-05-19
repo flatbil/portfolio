@@ -6,6 +6,15 @@
     Description: This website operates as a portfolio of projects I have worked on. At the moment
     it is rudimentary and a work in progress for future improvements.
 
+    Update 5/18/2022 per HTML5 100 Lesson 5 Assignment. 
+        - Redesigned CSS to include FlexBox styling.
+        - Articles now as FlexBox items and not list items.
+        - Adjusted positioning and style of header and footer.
+        - Incorporated Google Fonts and change font of most text.
+        - Added FontAwesome icon links for social media footer links.
+        - Removed href from text links and created clickable buttons.
+        - All links now use JS 'onclick' function.
+
     ToDo: add transitions to menus.
 
     All images used in this work are licenced under Creative Commons.
@@ -18,16 +27,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/600d643f3a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/stylesheet.css">
+
     <title>About Me</title>
 </head>
 <body>
     <header>
-        <h1>About Me</h1>
+        <h1>ABOUT ME</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-me.html">About Me</a></li>
+                <li onclick="window.location.href='index.html'">Home</li>
+                <li onclick="window.location.href='about-me.html'">About Me</li>
             </ul>
         </nav>
     </header>
@@ -35,76 +46,78 @@
         <h2>Welcome to my projects page.</h2>
         <p>The following are a list of projects that I have participated in from most recent to longest ago.</p>
     </article>
-    <ul class="projects">
-        <li>        
-            <article>
-                <h3>UW HTML5 100 Class</h3>
-                <img src="images/semantic-website.png" alt="semanticly programmed website">
-                <p>The previous week, I completed the Lesson 1 with the following program, link here:</p>
-            </article>
-            <button class="link"><a href="https://github.com/flatbil/semantic-elements.git">Lesson 1</a></button>
-        </li>
-        <li>
-            <article>
-                <h3>Boeing 777X Flight Controls Software Engineer</h3>
-                <img src="images/777-flight-controls.jfif" alt="777 flight controls as seen from the flight deck.">
-                <p>My current position as a Software Engineer working at Boeing on the Flight Controls team. 
-                    I work to design new tools for streamlining the process of certifying the new airplane software packages.
-                </p>
-            </article>
-            <button class="link"><a href="https://www.boeing.com/">Boeing 777X Flight Controls</a></button>
-        </li>
-        <li>
-            <article>
-                <h3>Aerospace Instructor, Boeing Conduent</h3>
-                <img src="images/instructor.jpg" alt="instructor teaching certification classes">
-                <p>Not long ago I was an instructor contractor working at Boeing teaching certification courses to new and existing hired
-                    Boeing mechanics and engineers. Course were a mix of classwork and hands on lab work. This job allowed me to travel 
-                    around the country.
-                </p>
-                <button class="link"><a href="https://www.conduent.com/human-capital-solutions/learning-services/learning-administration/">Aerospace Instructor</a></button>
-            </article>
-        </li>
-
-        <li>
-            <article>
-                <h3>Almond Properties Web Dev</h3>
-                <img src="images/cropped-ap-logo.png" alt="Logo from Almond Properties">
-                <p>I build the Almond Properties website using Wordpress. I am pretty terrible at Wordpress, 
-                    so the site isn't as functional as I would like. But here it is:
-                </p>
-            </article>
-            <button class="link"><a href="http://www.almondproperties.com/">Almond Properties</a></button>
-        </li>
-        <li>
-            <article>
-                <h3>Amazon Go QA Tech</h3>
-                <img src="images/amazon-go.jfif" alt="front of the store of Amazon Go">
-                <p>As an Amazon QA Tech contractor, I managed testing of the Amazon Go hardware and software mostly on the user-experience side.
-                </p>
-            </article>
-            <button class="link"><a href="https://www.amazon.com/b?node=16008589011">Amazon Go</a></button>
-        </li>
-        <li>
-            <article>
-                <h3>US Navy Software Engineer</h3>
-                <img src="images/navy-vr.jfif" alt="Navy Sailor using HTC Vive for VR training">
-                <p>As a Software Engineer for the US Navy, I designed an built a VR software that enables Sailors to practice infrequently 
-                    performed tasks using the HTC Vive and Unity 3D.
-                </p>
-            </article>
-            <button class="link"><a href="https://www.navsea.navy.mil/Home/Warfare-Centers/NUWC-Keyport/">NUWC Keyport</a></button>
-        </li>
-    </ul>
+    <div class="projects">
     
+        <article>
+            <h3>UW HTML5 100 Class</h3>
+            <img src="images/semantic-website.png" alt="semanticly programmed website">
+            <p>The previous week, I completed the Lesson 1 with the following program, link here:</p>
+            <button class="link" onclick="window.location.href='https://github.com/flatbil/semantic-elements.git'">Lesson 1</button>
+        </article>
+
+        <article>
+            <h3>Boeing 777X Flight Controls Software Engineer</h3>
+            <img src="images/777-flight-controls.jfif" alt="777 flight controls as seen from the flight deck.">
+            <p>My current position as a Software Engineer working at Boeing on the Flight Controls team. 
+                I work to design new tools for streamlining the process of certifying the new airplane software packages.
+            </p>
+            <button class="link"onclick="window.location.href='https://www.boeing.com/'">Boeing 777X Flight Controls</button>
+        </article>
+        
+
+        <article>
+            <h3>Aerospace Instructor, Boeing Conduent</h3>
+            <img src="images/instructor.jpg" alt="instructor teaching certification classes">
+            <p>Not long ago I was an instructor contractor working at Boeing teaching certification courses to new and existing hired
+                Boeing mechanics and engineers. Course were a mix of classwork and hands on lab work. This job allowed me to travel 
+                around the country.
+            </p>
+            <button class="link" onclick="window.location.href='https://www.conduent.com/human-capital-solutions/learning-services/learning-administration/'">Aerospace Instructor</button>
+        </article>
+
+        <article>
+            <h3>Almond Properties Web Dev</h3>
+            <img src="images/cropped-ap-logo.png" alt="Logo from Almond Properties">
+            <p>I build the Almond Properties website using Wordpress. I am pretty terrible at Wordpress, 
+                so the site isn't as functional as I would like. But here it is:
+            </p>
+            <button class="link" onclick="window.location.href='http://www.almondproperties.com/'">Almond Properties</button>
+        </article>
+       
+    
+        <article>
+            <h3>Amazon Go QA Tech</h3>
+            <img src="images/amazon-go.jfif" alt="front of the store of Amazon Go">
+            <p>As an Amazon QA Tech contractor, I managed testing of the Amazon Go hardware and software mostly on the user-experience side.
+            </p>
+            <button class="link" onclick="window.location.href='https://www.amazon.com/b?node=16008589011'">Amazon Go</button>
+        </article>
+        
+        <article>
+            <h3>US Navy Software Engineer</h3>
+            <img src="images/navy-vr.jfif" alt="Navy Sailor using HTC Vive for VR training">
+            <p>As a Software Engineer for the US Navy, I designed an built a VR software that enables Sailors to practice infrequently 
+                performed tasks using the HTC Vive and Unity 3D.
+            </p>
+            <button class="link" onclick="window.location.href='https://www.navsea.navy.mil/Home/Warfare-Centers/NUWC-Keyport/'">NUWC Keyport</button>
+        </article>
+    </div>
     <footer>
         <h3>Thank you for visiting my page</h3>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-me.html">About Me</a></li>
+                <li onclick="window.location.href='index.html'">Home</li>
+                <li onclick="window.location.href='about-me.html'">About Me</li>
             </ul>
         </nav>
+        <div class="foot-wrapper">
+            <div class="link-wrapper">
+                <i class="fa-brands fa-github fa-xl" onclick="window.location.href='https://github.com/flatbil/'"></i>
+                <i class="fa-brands fa-linkedin fa-xl" onclick="window.location.href='https://www.linkedin.com/in/william-almond-30386a8b'"></i>
+                
+            </div>
+            <p>Website is product of Will Almond</p>
+        </div>
     </footer>
 
 </body>
