@@ -13,6 +13,10 @@ h1 {
     color: white;
     padding: 1%;
 }
+h3{
+    width: 60%;
+    text-align: center;
+}
 .img-wrapper{
     position: absolute;
     display: flex;
@@ -24,6 +28,20 @@ h1 {
 }
 .head-wrapper{
     padding: 15px;
+}
+.trans-button{
+    width: 200px;
+    height:50px;
+    border: 0;
+    background-color: #B7A57A;
+    transition: 3s;
+}
+.trans-button:hover{
+    width: 600px;
+    cursor: pointer;
+    color: white;
+    background-color: #85754D;
+    
 }
 .face{
     border: solid #4B2E83 6px;
@@ -73,10 +91,11 @@ iframe{
     flex-flow: column wrap;
     flex-direction: row;
     justify-content: space-around;
+    
 }
 .projects :hover{
     background-color: #85754D;
-    transition: all 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .projects article{
@@ -104,10 +123,10 @@ iframe{
     position:static;
     
 }
-/* .projects article:hover >*{
-    opacity: 1;
-    transition: .5s;
-} */
+.projects article:nth-child(odd):hover{
+    background-color: white;
+}
+
 .foot-wrapper {
     display: flex;
     flex-direction: column;
