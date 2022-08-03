@@ -30,7 +30,47 @@
             
         </nav>
     </header>
-    
+    <article class="connect-card">
+        <form method="GET">
+            <h2>Let's Connect!</h2>
+            <label>Your Name (first and last):
+                <input type="text" name="contactName" placeholder="[first] [last]">
+            </label>
+            <label>Your email address:
+                <input type="email" name="contactEmail" placeholder="your@email.com">
+            </label>
+            <label>Phone number:
+                <input type="tel" name="contactPhone" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </label>
+            <label>Tell me something about yourself:
+                <textarea name="contactText" cols="50" rows="4"></textarea>
+            </label>
+            <fieldset>
+                <legend>What is your job roll?</legend>
+                <label class="checker">Recruiter
+                    <input type="checkbox" name="rectuiter">
+                </label>
+                <label class="checker">Hiring Manager
+                    <input type="checkbox" name="hiringManager">
+                </label>
+                <label class="checker">Other
+                    <input type="checkbox" name="otherCheck"> 
+                </label>
+                <input type="text" name="otherText">
+            </fieldset>
+            <label>How did you hear about me?
+                <select name="contactReference">
+                    <option value="">Select</option>
+                    <option value="linkedin">LinedIn</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="indeed">Indeed</option>
+                    <option value="github">GitHub</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <input type="submit" value="Send">
+        </form>
+    </article>
     <footer>
         <h3>Thank you for visiting my page</h3>
         <nav>

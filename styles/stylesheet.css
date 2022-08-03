@@ -153,3 +153,32 @@ iframe{
     80% { transform: translate(0px, -2px); }
     100% { transform: translate(0px, 0px); }
 }
+
+input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin: 10px;
+    
+}
+fieldset{
+    border: none;
+}
+.checker {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+input[type="submit"] {
+    width: 100%;
+    background-color: #4B2E83;
+    color: white;
+}
+input[type="text"]:focus {
+    background-color: 85754D;
+    outline: none;
+}
+input{
+    border-radius: 15px;
+}
