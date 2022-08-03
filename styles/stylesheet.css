@@ -175,8 +175,8 @@ input[type="submit"] {
     background-color: #4B2E83;
     color: white;
 }
-input[type="text"]:focus {
-    background-color: #85754D;
+input:focus {
+    background-color: #B7A57A;
     outline: none;
 }
 input{
